@@ -1,3 +1,4 @@
+#Amritanshu shukla(1230440009)
 # Q1. Print Numbers (1 to 10) using for loop
 for i in range(1, 11):
     print(i)
