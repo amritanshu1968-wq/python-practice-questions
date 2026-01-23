@@ -95,3 +95,29 @@ for product, price in products.items():
 # 17. Write a program to check if "Apple" exists as a key in a dictionary.
 fruits = {"Apple": 50, "Banana": 30, "Mango": 80}
 print("17.", "Apple exists" if "Apple" in fruits else "Apple does not exist")
+
+# 18. Find the key with the maximum value in a dictionary of student marks.
+student_marks = {
+    "Amit": 78,
+    "Riya": 92,
+    "Rahul": 85,
+    "Neha": 88
+}
+max_student = max(student_marks, key=student_marks.get)
+print("18. Student with maximum marks:", max_student, "-", student_marks[max_student])
+
+# 19. Convert two lists into a dictionary.
+keys = ["name", "age", "city"]
+values = ["Amit", 25, "Delhi"]
+result_dict = dict(zip(keys, values))
+print("19.", result_dict)
+
+# 20. Swap keys and values in a dictionary.
+original_dict = {
+    "a": 1,
+    "b": 2,
+    "c": 3
+}
+swapped_dict = {value: key for key, value in original_dict.items()}
+print("20. Original Dictionary:", original_dict)
+print("20. Swapped Dictionary:", swapped_dict)
